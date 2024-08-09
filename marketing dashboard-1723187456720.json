@@ -1,0 +1,1560 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 6,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 12,
+      "panels": [],
+      "title": "google analystics",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "blackcowmoo-googleanalytics-datasource",
+        "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unitScale": true
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 1
+      },
+      "id": 14,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "metrics": [
+            "active7DayUsers"
+          ],
+          "mode": "time series",
+          "refId": "A",
+          "selectedMetrics": [
+            {
+              "description": "The number of distinct active users on your site or app within a 7 day period. The 7 day period includes the last day in the report's date range.",
+              "label": "7-day active users",
+              "value": "active7DayUsers"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        },
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "hide": false,
+          "metrics": [
+            "active1DayUsers"
+          ],
+          "mode": "time series",
+          "refId": "B",
+          "selectedMetrics": [
+            {
+              "description": "The number of distinct active users on your site or app within a 1 day period. The 1 day period includes the last day in the report's date range. Note: this is the same as Active Users.",
+              "label": "1-day active users",
+              "value": "active1DayUsers"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        },
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "hide": false,
+          "metrics": [
+            "active28DayUsers"
+          ],
+          "mode": "time series",
+          "refId": "C",
+          "selectedMetrics": [
+            {
+              "description": "The number of distinct active users on your site or app within a 28 day period. The 28 day period includes the last day in the report's date range.",
+              "label": "28-day active users",
+              "value": "active28DayUsers"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        }
+      ],
+      "title": "Action users",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "blackcowmoo-googleanalytics-datasource",
+        "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unitScale": true
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 1
+      },
+      "id": 10,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "metrics": [
+            "newUsers"
+          ],
+          "mode": "time series",
+          "refId": "A",
+          "selectedMetrics": [
+            {
+              "description": "The number of users who interacted with your site or launched your app for the first time (event triggered: first_open or first_visit).",
+              "label": "New users",
+              "value": "newUsers"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        },
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "hide": false,
+          "metrics": [
+            "activeUsers"
+          ],
+          "mode": "time series",
+          "refId": "B",
+          "selectedMetrics": [
+            {
+              "description": "The number of distinct users who visited your site or app.",
+              "label": "Active users",
+              "value": "activeUsers"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        },
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "hide": false,
+          "metrics": [],
+          "mode": "time series",
+          "refId": "C",
+          "selectedMetrics": [],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        }
+      ],
+      "title": "Action users and New users",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "blackcowmoo-googleanalytics-datasource",
+        "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unitScale": true
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 9
+      },
+      "id": 11,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "hide": false,
+          "metrics": [
+            "sessionsPerUser"
+          ],
+          "mode": "time series",
+          "refId": "B",
+          "selectedMetrics": [
+            {
+              "description": "The average number of sessions per user (Sessions divided by Active Users).",
+              "label": "Sessions per user",
+              "value": "sessionsPerUser"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        },
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "hide": false,
+          "metrics": [
+            "eventCountPerUser"
+          ],
+          "mode": "time series",
+          "refId": "C",
+          "selectedMetrics": [
+            {
+              "description": "The average number of events per user (Event count divided by Active users).",
+              "label": "Event count per user",
+              "value": "eventCountPerUser"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        },
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "hide": false,
+          "metrics": [
+            "screenPageViewsPerUser"
+          ],
+          "mode": "time series",
+          "refId": "A",
+          "selectedMetrics": [
+            {
+              "description": "The number of app screens or web pages your users viewed per active user. Repeated views of a single page or screen are counted. (screen_view + page_view events) / active users.",
+              "label": "Views per user",
+              "value": "screenPageViewsPerUser"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        }
+      ],
+      "title": "Each user generates session and event and view browsing",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "blackcowmoo-googleanalytics-datasource",
+        "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unitScale": true
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 9
+      },
+      "id": 13,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "metrics": [
+            "averageSessionDuration"
+          ],
+          "mode": "time series",
+          "refId": "A",
+          "selectedMetrics": [
+            {
+              "description": "The average duration (in seconds) of users` sessions.",
+              "label": "Average session duration",
+              "value": "averageSessionDuration"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        }
+      ],
+      "title": "Average session duration",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "blackcowmoo-googleanalytics-datasource",
+        "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unitScale": true
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 17
+      },
+      "id": 15,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "metrics": [
+            "keyEvents:annotator_submitted"
+          ],
+          "mode": "time series",
+          "refId": "A",
+          "selectedMetrics": [
+            {
+              "description": "The count of a specific key event.",
+              "label": "Key event count for annotator_submitted",
+              "value": "keyEvents:annotator_submitted"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        },
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "dimensions": [
+            "achievementId"
+          ],
+          "displayName": {},
+          "hide": false,
+          "metrics": [
+            "eventCount"
+          ],
+          "mode": "time series",
+          "refId": "B",
+          "selectedDimensions": [
+            {
+              "description": "The achievement ID in a game for an event. Populated by the event parameter `achievement_id`.",
+              "label": "Achievement ID",
+              "value": "achievementId"
+            }
+          ],
+          "selectedMetrics": [
+            {
+              "description": "The count of events.",
+              "label": "Event count",
+              "value": "eventCount"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        },
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "hide": false,
+          "metrics": [
+            "keyEvents:task_reviewed"
+          ],
+          "mode": "time series",
+          "refId": "D",
+          "selectedMetrics": [
+            {
+              "description": "The count of a specific key event.",
+              "label": "Key event count for task_reviewed",
+              "value": "keyEvents:task_reviewed"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        },
+        {
+          "accountId": "accounts/295352600",
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "blackcowmoo-googleanalytics-datasource",
+            "uid": "eab069dc-8508-47e7-a38e-2a9f88f55711"
+          },
+          "dimensionFilter": {},
+          "displayName": {},
+          "hide": false,
+          "metrics": [
+            "keyEvents"
+          ],
+          "mode": "time series",
+          "refId": "E",
+          "selectedMetrics": [
+            {
+              "description": "The count of key events. Marking an event as a key event affects reports from time of creation. It doesn't change historic data. You can mark any event as key in Google Analytics, and some events (such as `first_open` or `purchase`) are marked as key events by default.",
+              "label": "Key events",
+              "value": "keyEvents"
+            }
+          ],
+          "selectedTimeDimensions": {
+            "description": "The date of the event, formatted as YYYYMMDD.",
+            "label": "Date",
+            "value": "date"
+          },
+          "timeDimension": "date",
+          "timezone": "Etc/GMT-8",
+          "version": "v4",
+          "webPropertyId": "properties/418588232"
+        }
+      ],
+      "title": "The count of a specific key event",
+      "type": "timeseries"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 25
+      },
+      "id": 9,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unitScale": true
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 42
+          },
+          "id": 5,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+              },
+              "editorMode": "code",
+              "expr": "twitter_followers_count",
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "twitter_followers_count",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unitScale": true
+            },
+            "overrides": [
+              {
+                "__systemRef": "hideSeriesFrom",
+                "matcher": {
+                  "id": "byNames",
+                  "options": {
+                    "mode": "exclude",
+                    "names": [
+                      "{__name__=\"telegram_group_size\", application=\"achievement-api\", instance=\"172.23.0.3:3001\", job=\"achievement-api\"}"
+                    ],
+                    "prefix": "All except:",
+                    "readOnly": true
+                  }
+                },
+                "properties": [
+                  {
+                    "id": "custom.hideFrom",
+                    "value": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": true
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 42
+          },
+          "id": 6,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+              },
+              "editorMode": "code",
+              "expr": "telegram_group_size",
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "telegram_group_size",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unitScale": true
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 50
+          },
+          "id": 7,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+              },
+              "editorMode": "code",
+              "expr": "media_mentions_total",
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "media_mentions_total",
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unitScale": true
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 12,
+            "y": 50
+          },
+          "id": 8,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+              },
+              "editorMode": "code",
+              "expr": "discord_channel_size_count",
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "discord_channel_size_count",
+          "type": "timeseries"
+        }
+      ],
+      "title": "twitter,telegram,media",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 26
+      },
+      "id": 4,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unitScale": true
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 43
+          },
+          "id": 3,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+              },
+              "editorMode": "code",
+              "expr": "hubspot_gauge",
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "hubspot_gauge",
+          "type": "timeseries"
+        }
+      ],
+      "title": "Marketing Email reports",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 27
+      },
+      "id": 2,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PBFA97CFB590B2093"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              },
+              "unitScale": true
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 12,
+            "x": 0,
+            "y": 44
+          },
+          "id": 1,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "bottom",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PBFA97CFB590B2093"
+              },
+              "editorMode": "code",
+              "expr": "hubspot_histogram_report ",
+              "instant": false,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "hubspot_histogram_report ",
+          "type": "timeseries"
+        }
+      ],
+      "title": "Email performance reports",
+      "type": "row"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 39,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timeRangeUpdatedDuringEditOrView": false,
+  "timepicker": {},
+  "timezone": "",
+  "title": "marketing dashboard",
+  "uid": "f537f227-60c9-47d6-8ed8-0638039ea217",
+  "version": 19,
+  "weekStart": ""
+}
